@@ -2,23 +2,10 @@ import { Settings, Brain, Palette } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import ThemeToggle from "@/components/ThemeToggle";
 
 export default function SettingsPage() {
   return (
-    <div className="flex flex-col h-screen">
-      <header className="border-b border-border bg-background px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-bold">Настройки</h1>
-            <p className="text-sm text-muted-foreground mt-1">
-              Конфигурация системы и агентов
-            </p>
-          </div>
-          <ThemeToggle />
-        </div>
-      </header>
-
+    <div className="flex flex-col h-full">
       <div className="flex-1 p-6 overflow-auto">
         <div className="max-w-4xl space-y-6">
           <Card className="p-6">
